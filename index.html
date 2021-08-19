@@ -60,7 +60,7 @@
     }).addTo(map)
 
     // Read data from CSV file
-    $.get('./data.csv', function(csvString) {
+    $.get('./obsid.csv', function(csvString) {
 
       // Use PapaParse to transform file into arrays
       var data = Papa.parse(csvString.trim()).data.filter(
